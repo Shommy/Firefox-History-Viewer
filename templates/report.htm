@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Firefox History List</title>
+	</head>
+	<body>
+		<h3>Firefox History List</h3><br>
+		<table border="1" cellpadding="5">
+			<tr bgcolor="E0E0E0">
+				<th>Title
+				<th>URL
+				<th>Last Visit Date
+			{% for row in rows %}
+			<tr>
+				<td bgcolor=#FFFFFF nowrap>{{ row.title|e }}
+				<td bgcolor=#FFFFFF nowrap><a href="{{ row.url|e }}">{{ row.url|e }}</a>
+				<td bgcolor=#FFFFFF nowrap>{{ row.time|e }}
+			{% endfor %}
+		</table>
+	</body>
+</html>
