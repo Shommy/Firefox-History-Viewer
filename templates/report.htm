@@ -2,19 +2,20 @@
 <html>
 	<head>
 		<title>Firefox History List</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 	</head>
 	<body>
 		<h3>Firefox History List</h3><br>
 		<table border="1" cellpadding="5">
 			<tr bgcolor="E0E0E0">
-				<th>Title
 				<th>URL
+				<th>Title
 				<th>Last Visit Date
 			{% for row in rows %}
 			<tr>
-				<td bgcolor=#FFFFFF nowrap>{{ row.title|e }}
-				<td bgcolor=#FFFFFF nowrap><a href="{{ row.url|e }}">{{ row.url|e }}</a>
-				<td bgcolor=#FFFFFF nowrap>{{ row.time|e }}
+				<td bgcolor=#FFFFFF><a href="{{ row.url|e }}">{{ row.url|e }}</a>
+				<td bgcolor=#FFFFFF>{{ row.title or ''|e }}
+				<td bgcolor=#FFFFFF>{{ row.time|e }}
 			{% endfor %}
 		</table>
 	</body>
