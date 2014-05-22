@@ -10,7 +10,7 @@ def main(argv):
 	reportPath = None
 
 	usage = """
-	Usage: history.py [OPTIONS]
+	Usage: firefoxHistoryViewer.py [OPTIONS]
 
 	Options:
 		-h,  --help :  print this usage

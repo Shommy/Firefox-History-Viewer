@@ -8,7 +8,9 @@ class HTMLreporter(object):
 		self._template = Template(templateFile.read())
 		templateFile.close()
 		
-	def report(self, rows, reportFileName = "output.html"):
+	def report(self, rows, reportFileName = None):
+		if reportFileName is None:
+			reportFileName = "output.html"
 		reportFile = open(reportFileName, "wt")
 		reportFile.write(self._template.render(rows = rows).encode("utf-8"))
 		reportFile.close()
