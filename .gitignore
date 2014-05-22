@@ -1,4 +1,4 @@
 *.pyc
 *.sqlite*
-*.html
-!templates/*.html
+*.htm*
+!templates/*.htm*
