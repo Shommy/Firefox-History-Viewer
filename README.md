@@ -13,7 +13,7 @@ Requires:
 
 Usage: 
 
-	history.py [OPTIONS]
+	firefoxHistoryViewer.py [OPTIONS]
 	Options:
 		-h,  --help :  print this usage
 		-p,  --path :  path to places.sqlite file
