@@ -1,5 +1,5 @@
-FirefoxHistoryList
-==================
+Firefox History Viewer
+======================
 
 
 Simple history viewer for Mozilla Firefox in Python. 
